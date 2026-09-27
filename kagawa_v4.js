@@ -88,7 +88,7 @@
       'Project Brief:',
       message
     ].join('\n');
-    window.open(`https://wa.me/6281363342574?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/6281363154019?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
   });
 
   // Smoothly close other FAQ items when one opens
