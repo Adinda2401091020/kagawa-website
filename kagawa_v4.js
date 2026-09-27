@@ -72,12 +72,14 @@
   // Project inquiry -> WhatsApp
   $('#projectForm')?.addEventListener('submit', function (event) {
     event.preventDefault();
+
     const data = new FormData(this);
     const name = data.get('name') || '';
     const company = data.get('company') || '-';
     const phone = data.get('phone') || '';
     const service = data.get('service') || '';
     const message = data.get('message') || '';
+
     const text = [
       `Halo Kagawa, saya ${name}.`,
       '',
@@ -88,7 +90,12 @@
       'Project Brief:',
       message
     ].join('\n');
-    window.open(`https://wa.me/6281363342574?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+
+    window.open(
+      `https://wa.me/6281363154019?text=${encodeURIComponent(text)}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
   });
 
   // Smoothly close other FAQ items when one opens
